@@ -1,0 +1,114 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "API Desafio Gama Academy",
+    "description": "API criada para o desafio Jobsnet",
+    "version": "0.0.1"
+  },
+
+  "servers": [
+    {
+      "url": "http://localhost:3003/",
+      "description": "ambiente de desenvolvimento"
+    }
+  ],
+
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidato",
+        "description": "Rota de cadastro de usuário",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "cargo": {
+                    "type": "string"
+                  },
+                  "nascimento": {
+                    "type": "date"
+                  },
+                  "estadoCivil": {
+                    "type": "string"
+                  },
+                  "sexo": {
+                    "type": "string"
+                  },
+                  "cep": {
+                    "type": "string"
+                  },
+                  "endereco": {
+                    "type": "string"
+                  },
+                  "numero": {
+                    "type": "string"
+                  },
+                  "bairro": {
+                    "type": "string"
+                  },
+                  "cidade": {
+                    "type": "string"
+                  },
+                  "estado": {
+                    "type": "string"
+                  },
+                  "telefone": {
+                    "type": "string"
+                  },
+                  "celular": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "cpf": {
+                    "type": "string"
+                  },
+                  "rg": {
+                    "type": "string"
+                  },
+                  "veiculo": {
+                    "type": "string"
+                  },
+                  "habilitacao": {
+                    "type": "string"
+                  }
+                }
+              },
+              "examples": {
+                "Mario": {
+                  "value": {
+                    "nome": "Mario da Silva",
+                    "cargo": "Dev Junior",
+                    "nascimento": "01/02/1980",
+                    "estadoCivil": "Solteiro (a)",
+                    "sexo": "Masculino",
+                    "cep": "00000-000",
+                    "endereco": "Rua da concordia",
+                    "numero": "145",
+                    "bairro": "Dantas Barreto",
+                    "cidade": "Recife",
+                    "estado": "Pernambuco",
+                    "telefone": "3555-4154",
+                    "celular": "99999-9999",
+                    "email": "pedro.hiro@gmail.com",
+                    "cpf": "11111111111",
+                    "rg": "1111111",
+                    "veiculo": "Não",
+                    "habilitacao": "CNH A"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
