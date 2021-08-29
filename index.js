@@ -17,7 +17,7 @@ app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes);
 
 
- app.listen('3003' , () => 
+ app.listen(process.env.PORT || '3003' , () => 
  {
     console.log('rodando na porta 3003');
  }
