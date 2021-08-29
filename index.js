@@ -6,13 +6,15 @@ const routes = require('./routes');
 const app = express();
 const cors = require('cors');
 
-
-mongoose.connect('mongodb+srv://dbSuelen:algumacoisa@cluster0.zui7s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
-    
-});
+ongoose.connect('mongodb+srv://dbSuelen:algumacoisa@cluster0.zui7s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+   {
+     useNewUrlParser: true
+   }
+ );
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes);
 
