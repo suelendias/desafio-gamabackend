@@ -9,7 +9,7 @@
 
   "servers": [
     {
-      "url": "http://localhost:3003/",
+      "url": "https://uploadgama-backend.herokuapp.com/",
       "description": "ambiente de desenvolvimento"
     }
   ],
@@ -32,7 +32,7 @@
                     "type": "string"
                   },
                   "nascimento": {
-                    "type": "date"
+                    "type": "string"
                   },
                   "estadoCivil": {
                     "type": "string"
