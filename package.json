@@ -1,11 +1,11 @@
 {
-  "name": "backend",
+  "name": "server",
   "version": "1.0.0",
   "description": "backend desafio gama",
   "main": "index.js",
   "keywords": [],
   "author": "Suelen Dias",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {    
     "body-parser": "1.18.2",
     "cors": "^2.8.5",
@@ -20,8 +20,7 @@
   },
   
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   }
 }
