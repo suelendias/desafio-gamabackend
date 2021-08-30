@@ -4,21 +4,22 @@
   "description": "backend desafio gama",
   "main": "index.js",
   "keywords": [],
-  "author": "",
+  "author": "Suelen Dias",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "body-parser": "1.18.2",
     "cors": "^2.8.5",
     "express": "4.16.3",
+    "mongodb": "^4.1.1",
     "mongoose": "^6.0.1",
+    "nodemon": "^2.0.12",
     "swagger-ui-express": "^4.1.6"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
-  },
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   }
 }
